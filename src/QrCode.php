@@ -7,15 +7,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Endroid\QrCode;
+namespace Uzuzoo\QrCode;
 
-use Endroid\QrCode\Exceptions\DataDoesntExistsException;
-use Endroid\QrCode\Exceptions\FreeTypeLibraryMissingException;
-use Endroid\QrCode\Exceptions\ImageFunctionFailedException;
-use Endroid\QrCode\Exceptions\ImageTypeInvalidException;
-use Endroid\QrCode\Exceptions\VersionTooLargeException;
-use Endroid\QrCode\Exceptions\ImageSizeTooLargeException;
-use Endroid\QrCode\Exceptions\ImageFunctionUnknownException;
+use Uzuzoo\QrCode\Exceptions\DataDoesntExistsException;
+use Uzuzoo\QrCode\Exceptions\FreeTypeLibraryMissingException;
+use Uzuzoo\QrCode\Exceptions\ImageFunctionFailedException;
+use Uzuzoo\QrCode\Exceptions\ImageTypeInvalidException;
+use Uzuzoo\QrCode\Exceptions\VersionTooLargeException;
+use Uzuzoo\QrCode\Exceptions\ImageSizeTooLargeException;
+use Uzuzoo\QrCode\Exceptions\ImageFunctionUnknownException;
 use ReflectionFunction;
 
 /**
@@ -239,7 +239,7 @@ class QrCode
     public function setErrorCorrection($error_correction)
     {
         if (!is_numeric($error_correction)) {
-            $level_constant = 'Endroid\QrCode\QrCode::LEVEL_'.strtoupper($error_correction);
+            $level_constant = 'Uzuzoo\QrCode\QrCode::LEVEL_'.strtoupper($error_correction);
             $error_correction = constant($level_constant);
         }
 

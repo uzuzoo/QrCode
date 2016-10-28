@@ -7,9 +7,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Endroid\QrCode\Factory;
+namespace Uzuzoo\QrCode\Factory;
 
-use Endroid\QrCode\QrCode;
+use Uzuzoo\QrCode\QrCode;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class QrCodeFactory

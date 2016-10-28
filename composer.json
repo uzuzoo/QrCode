@@ -1,16 +1,20 @@
 {
-    "name": "endroid/qrcode",
-    "description": "Endroid QR Code",
-    "keywords": ["endroid", "qrcode", "qr", "code"],
-    "homepage": "https://github.com/endroid/QrCode",
+    "name": "uzuzoo/qrcode",
+    "description": "Uzuzoo QR Code",
+    "keywords": ["uzuzoo", "qrcode", "qr", "code"],
+    "homepage": "https://github.com/uzuzoo/QrCode",
     "type": "library",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Jeroen van den Enden",
-            "email": "info@endroid.nl",
-            "homepage": "http://endroid.nl/"
-        }
+      {
+          "name": "Jeroen van den Enden",
+          "email": "info@endroid.nl",
+          "homepage": "http://endroid.nl/"
+      },
+      {
+          "name": "Alex Wright",
+          "homepage": "https://github.com/uzuzoo"
+      }
     ],
     "require": {
         "php": ">=5.3.0",
@@ -19,20 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Endroid\\QrCode\\": "src/"
+            "Uzuzoo\\QrCode\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Endroid\\QrCode\\": "tests/"
-        }
-    },
-    "config": {
-        "bin-dir": "bin"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.x-dev"
+            "Uzuzoo\\QrCode\\": "tests/"
         }
     }
 }

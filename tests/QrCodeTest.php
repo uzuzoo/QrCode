@@ -7,11 +7,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Endroid\Tests\QrCode;
+namespace Uzuzoo\Tests\QrCode;
 
-use Endroid\QrCode\Exceptions\ImageFunctionFailedException;
-use Endroid\QrCode\Exceptions\ImageFunctionUnknownException;
-use Endroid\QrCode\QrCode;
+use Uzuzoo\QrCode\Exceptions\ImageFunctionFailedException;
+use Uzuzoo\QrCode\Exceptions\ImageFunctionUnknownException;
+use Uzuzoo\QrCode\QrCode;
 use PHPUnit_Framework_TestCase;
 
 class QrCodeTest extends PHPUnit_Framework_TestCase

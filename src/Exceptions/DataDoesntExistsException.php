@@ -7,7 +7,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Endroid\QrCode\Exceptions;
+namespace Uzuzoo\QrCode\Exceptions;
 
 class DataDoesntExistsException extends \Exception
 {

@@ -2,12 +2,7 @@ QR Code
 =======
 
 *By [endroid](http://endroid.nl/)*
-
-[![Latest Stable Version](http://img.shields.io/packagist/v/endroid/qrcode.svg)](https://packagist.org/packages/endroid/qrcode)
-[![Build Status](http://img.shields.io/travis/endroid/QrCode.svg)](http://travis-ci.org/endroid/QrCode)
-[![Total Downloads](http://img.shields.io/packagist/dt/endroid/qrcode.svg)](https://packagist.org/packages/endroid/qrcode)
-[![Monthly Downloads](http://img.shields.io/packagist/dm/endroid/qrcode.svg)](https://packagist.org/packages/endroid/qrcode)
-[![License](http://img.shields.io/packagist/l/endroid/qrcode.svg)](https://packagist.org/packages/endroid/qrcode)
+*Update [uzuzoo](https://github.com/uzuzoo)*
 
 This library based on QRcode Perl CGI & PHP scripts by Y. Swetake helps you generate images containing a QR code.
 
@@ -16,7 +11,7 @@ This library based on QRcode Perl CGI & PHP scripts by Y. Swetake helps you gene
 Use [Composer](https://getcomposer.org/) to install the library.
 
 ``` bash
-$ composer require endroid/qrcode
+$ composer require uzuzoo/qrcode
 ```
 
 ## Usage
@@ -24,7 +19,7 @@ $ composer require endroid/qrcode
 ```php
 <?php
 
-use Endroid\QrCode\QrCode;
+use Uzuzoo\QrCode\QrCode;
 
 $qrCode = new QrCode();
 $qrCode
@@ -47,18 +42,6 @@ $qrCode->render();
 $response = new Response($qrCode->get(), 200, array('Content-Type' => $qrCode->getContentType()));
 
 ```
-
-![QR Code](http://endroid.nl/qrcode/Life%20is%20too%20short%20to%20be%20generating%20QR%20codes.png)
-
-## Symfony
-
-You can use [`EndroidQrCodeBundle`](https://github.com/endroid/EndroidQrCodeBundle) to integrate this service in your Symfony application.
-
-## Versioning
-
-Version numbers follow the MAJOR.MINOR.PATCH scheme. Backwards compatibility
-breaking changes will be kept to a minimum but be aware that these can occur.
-Lock your dependencies for production and test your code when upgrading.
 
 ## License
 
